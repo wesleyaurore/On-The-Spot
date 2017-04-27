@@ -1,0 +1,119 @@
+/*----------------------HEADER------------------*/
+
+header{
+	width: 100%;
+	
+	h1{
+		width: 20%;
+		float: left;
+		margin: 1.5% 0 0 5%;
+
+		.logo{ width: 100%;	}
+	}
+	
+	@media screen and (max-width: 740px){
+		h1{
+			width: 35%;
+			float: none;
+			margin: 2% auto;
+		}
+	}
+
+	@media screen and (max-width: 480px){
+		h1{
+			width: 55%;
+			float: none;
+			margin: 2% auto;
+		}
+	}
+}
+
+/*----------------------NAV------------------*/
+
+nav{
+	float: right;
+	width: 500px;
+	margin: 1.5% 3% 0 0;
+
+	.ul-nav{
+		text-align: right;
+
+		li{
+			display: table-cell;
+			list-style: none;
+			padding: 0 25px;
+			font-size: 2rem;
+
+			a{
+				text-decoration: none;
+				color: #000;
+			}
+		}
+
+		@media screen and (max-width: 480px){
+			li{
+				display: initial;
+				padding: 0 7px;
+				font-size: 1.95rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: 480px){
+		.ul-nav{ text-align: center; }
+	}
+	
+	.ul-social{
+		width: 25%;
+		margin: 3% 0 0 64%;
+
+		li{
+			width: 20%;
+			display: table-cell;
+
+			a{
+				text-decoration: none;
+				display: block;
+				text-align: right;
+				
+				img{ 
+					width: 80%; 
+
+					&:last-child{
+						width: 81.4%;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 740px){
+		.ul-social{
+			width: 22%;
+			margin: 3% 0 0 68%;
+		}
+	}
+
+	@media screen and (max-width: 480px){
+		.ul-social{
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 740px){
+	nav{
+		float: none;
+		width: 500px;
+		margin: 3% auto 3%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	nav{
+		width: 100%;
+		float: none;
+		margin: 3% 0 3%;
+		text-align: center;
+	}
+}

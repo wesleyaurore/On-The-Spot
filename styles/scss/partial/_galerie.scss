@@ -1,0 +1,42 @@
+/*----------------------Galerie-------------------------*/
+
+.galerie
+{
+	width: 100%;
+	
+	h2{
+		margin-top: 3%; 
+		text-align: center;
+		font-weight: 600;
+		font-size: 4rem;
+	}
+
+	.content{
+		margin: 0 auto;
+		width: 90%;	
+
+		img{
+			width: 20%;
+			margin: 2% 2.5%;
+			float: left;
+			box-shadow: 10px 10px 20px #d6d6d6;
+		}
+		
+		@media screen and (max-width: 740px){
+			img{
+				width: 30%;
+				margin: 2% 1.5%;
+				box-shadow: 5px 5px 10px #d6d6d6;
+			}
+
+		}
+
+		@media screen and (max-width: 480px){
+			img{
+				width: 48%;
+				margin: 2% 1%;
+			}
+		}
+
+	}
+}

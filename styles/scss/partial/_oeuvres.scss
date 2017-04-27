@@ -1,0 +1,245 @@
+/*----------------------Oeuvres-------------------------*/
+
+header.oeuvres-header
+{
+	margin-bottom: 2%;
+}
+
+.oeuvres{
+	position: relative;
+	margin-top: 2%; 
+	color: #fff;
+	overflow: hidden;
+	width: 90%;
+	margin: 0 auto;
+	background: #000;
+
+	.bg-fig{
+		float: right;
+		width: 55%;
+		opacity: 0.3;
+
+		.bg-artiste{ width: 100%; }
+		
+		@media screen and (max-width: 740px){
+			.bg-artiste{ width: 100%; }
+		}
+
+	}
+
+	@media screen and (max-width: 1200px){
+		.bg-fig{ width: 65%; }
+	}
+
+	@media screen and (max-width: 1000px){
+		.bg-fig{
+			position: absolute;
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 740px){
+		.bg-fig{
+			position: initial;
+			float: right;
+		}
+	}
+
+	.details{
+		width: 45%;
+
+		h2{
+			margin: 2% 0 5% 5%;
+			font-size: 4rem;
+			font-weight: 600;
+		}
+		
+		h3{
+			margin: 0 0 2.5% 5%;
+			font-size: 3rem;
+			font-weight: 400;
+		}
+
+		h4{
+			margin: 0 0 1.5% 5%;
+			font-size: 2rem;
+			font-weight: 300;
+		}
+
+		p{
+			margin: 0 0 10% 5%;
+			line-height: 22px;
+			font-size: 1.8rem;
+			font-weight: 300;
+			
+		}
+		
+		@media screen and (max-width: 1000px){
+			p{ margin: 0 0 20% 5%; }
+		}
+
+		@media screen and (max-width: 740px){
+			p{ margin: 0 0 15% 5%; }
+		}
+
+		span.map{
+			margin: 0 0 0 5%;
+			padding: 15px 80px;
+			font-size: 2rem;
+			background: #fff;
+			color: #000;
+		}
+
+		@media screen and (max-width: 1000px){
+			span.map{
+				position: relative;
+				bottom: 30px;
+			}
+		}
+
+		@media screen and (max-width: 740px){
+			span.map{ margin: 0 0 0 5%; }
+		}
+		
+
+		span.prev{
+			width: 50px;
+			position: absolute;
+			background: rgba(0,0,0,0);
+			left: 50%;
+			bottom: 45%;
+
+			img{ width: 100%; }	
+		}
+
+		@media screen and (max-width: 1200px){
+			span.prev{ left: 38%; }
+		}
+
+		@media screen and (max-width: 1000px){
+			span.prev{ left: 52%; }
+		}
+
+		@media screen and (max-width: 740px){
+			span.prev{ 
+				left: 6%;
+				top: 20%; 
+			}
+		}
+
+		.hidden{
+			display: none;
+		}
+
+	}
+
+	@media screen and (max-width: 740px){
+		.details{ width: 90%; }
+
+	}
+
+	@media screen and (max-width: 480px){
+		.details { width: 85%; }
+	}
+	
+	a{ text-decoration: none; }
+
+	.div-carousel{
+		position: absolute;
+		width: 40%;
+		right: 0%;
+		top: 10%;
+		overflow: hidden;
+
+		.carousel{
+			position: relative;
+			width: 700%;
+		
+			li{
+				display: table-cell;
+				width: 10%;
+				display: none;
+				
+				img{
+					width: 100%;
+				}
+			}
+		
+			li.active{
+				display: block;
+			}
+		}
+	}
+
+
+	@media screen and (max-width: 1200px){
+		.div-carousel{
+			width: 45%;
+			right: 4%;
+		}
+	}
+
+	@media screen and (max-width: 1000px){
+		.div-carousel{
+			width: 35%;
+			right: 1.5%;
+			top:20%;
+		}
+	}
+
+	@media screen and (max-width: 740px){
+		.div-carousel{
+			position: absolute;
+			width: 70%;
+			right: 4%;
+			top: 3%;
+			overflow: hidden;
+		}
+	}
+
+
+
+	span.next{
+		width: 50px;
+		position: absolute;
+		background: rgba(0,0,0,0);
+		right: 2%;
+		bottom: 45%; 
+		
+		img{ width: 100%; }
+	}
+
+	@media screen and (max-width: 740px){
+		span.next{
+			right: 6%;
+			top: 20%; 
+		}
+	}
+
+	.retour{
+		display: block;
+		position: absolute;
+		right: 0%;
+		bottom: 45%; 
+		background: #000;
+		padding: 20px 50px;
+		font-size: 2rem;
+		color: #fff;
+		transition: all 1s;
+	}
+
+	@media screen and (max-width: 740px){
+		.retour{
+			display: none;
+		}
+	}
+
+	.hidden{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.oeuvres{ width: 100%; }
+}
+
