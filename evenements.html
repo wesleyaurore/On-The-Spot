@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<title>On the spot</title>
+	<link rel="icon" type="image/png" sizes="96x96" href="img-layout/ots.png">
+	<link rel="stylesheet" href="styles/css/screen.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet">
+</head>
+<body>
+	<header class="clearfix">
+		<h1><a href="accueil.html"><img class="logo" src="img-layout/logo.png" alt="logo"></a></h1>
+
+		<nav class="clearfix">
+			<ul class="ul-nav">
+				<li><a href="artistes.html">Artistes</a></li>
+				<li><a href="galerie.html">Galerie</a></li>
+				<li><a href="evenements.html">Evenements</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<ul class="ul-social">
+				<li><a href=""><img src="img-layout/fb.svg" alt="social"></a></li>
+				<li><a href=""><img src="img-layout/twitter.svg" alt="social"></a></li>
+				<li><a href=""><img src="img-layout/insta.svg" alt="social"></a></li>
+				<li><a href=""><img src="img-layout/gplus.svg" alt="social"></a></li>
+				<li><a href=""><img src="img-layout/pinterest.svg" alt="social"></a></li>	
+			</ul>
+		</nav>
+	</header>
+	<a href="../home.html" class="back-home-a">
+		<span class="back-home"><p class="back-home-p">Return to</p></span>
+		<img class="logo-link" src="img-layout/logo-link.svg" alt="logo link">
+	</a>	
+
+	<section class="liste">
+		<h2>Evenements</h2>
+		
+		<article class="clearfix">
+			<a href="evenements.html">
+				<span>En savoir plus</span>
+				<h3>Urban Art Fair</h3>
+				<p>Urban Art Fair ouvre sa première Foire internationale dédiée à l’art urbain.
+					Elle s’installe au Carreau du Temple du 22 au 24 avril 2016. Une trentaine
+					de galeries internationales seront réunies pour l’occasion.
+				</p>
+				<figure>
+					<img src="img-content/urbanart.jpg" alt="urban art fair">
+				</figure>
+			</a>
+		</article>
+
+		<article class="clearfix">
+			<a href="evenements.html">
+				<span>En savoir plus</span>
+				<h3>Bestiaires</h3>
+				<p>Le bestiaire est une thématique récurrente en peinture. Elle est vieille comme
+					l'humanité et illustre, à chaque période de l'Histoire, le regard que nous
+					portons	sur le monde animal.
+				</p>
+				<figure>
+					<img src="img-content/bestiaires.jpg" alt="bestiaires">
+				</figure>
+			</a>
+		</article>
+
+		<article class="clearfix">
+			<a href="evenements.html">
+				<span>En savoir plus</span>
+				<h3>Artaq Paris</h3>
+				<p>L'Espace Pierre Cardin accueille cent trente artistes, de quarante-huit pays,
+					qui font les Arts Urbains d'aujourd'hui et de demain à travers l'exposition
+					Artaq Paris.
+				</p>
+				<figure>
+					<img src="img-content/artaq.jpg" alt="urban art">
+				</figure>
+			</a>
+		</article>
+	</section>
+
+	<footer>
+		<ul class="ul-footer">
+			<li><a href="accueil.html">Accueil</a></li>
+			<li><a href="artistes.html">Artistes</a></li>
+			<li><a href="galerie.html">Galerie</a></li>
+			<li><a href="evenements.html">Evenements</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<ul class="social">
+			<li><a href=""><img src="img-layout/fb.svg" alt="social"></a></li>
+			<li><a href=""><img src="img-layout/twitter.svg" alt="social"></a></li>
+			<li><a href=""><img src="img-layout/insta.svg" alt="social"></a></li>
+			<li><a href=""><img src="img-layout/gplus.svg" alt="social"></a></li>
+			<li><a href=""><img src="img-layout/pinterest.svg" alt="social"></a></li>
+		</ul>
+		<p>Mentions Légales- Copyright 2017</p>
+	</footer>
+	<script>
+		var logoLink = document.querySelector('.logo-link');
+		var backHome = document.querySelector('.back-home');
+
+		logoLink.style.width = '40px';
+		console.log('yup');
+		window.setTimeout("logoMin()", 3000);
+		window.setTimeout("spanner()", 2000);
+
+		function spanner() {
+			backHome.style.width = "0";
+		}	
+
+		function logoMin() {
+			logoLink.style.width = '';	
+		}
+	</script>
+</body>
+</html>

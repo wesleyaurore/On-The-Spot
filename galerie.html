@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<title>On The Spot</title>
+	<link rel="icon" type="image/png" sizes="96x96" href="img-layout/ots.png">
+	<link rel="stylesheet" href="styles/css/screen.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet">
+</head>
+<body>
+	<header class="clearfix">
+		<h1><a href="accueil.html"><img class="logo" src="img-layout/logo.png" alt="logo"></a></h1>
+
+		<nav class="clearfix">
+			<ul class="ul-nav">
+				<li><a href="artistes.html"><strong>Artistes</strong></a></li>
+				<li><a href="galerie.html">Galerie</a></li>
+				<li><a href="evenements.html">Evenements</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<ul class="ul-social">
+				<li><a href=""><img src="img-layout/fb.svg" alt="social"></a></li>
+				<li><a href=""><img src="img-layout/twitter.svg" alt="social"></a></li>
+				<li><a href=""><img src="img-layout/insta.svg" alt="social"></a></li>
+				<li><a href=""><img src="img-layout/gplus.svg" alt="social"></a></li>
+				<li><a href=""><img src="img-layout/pinterest.svg" alt="social"></a></li>	
+			</ul>
+		</nav>
+	</header>
+	
+	<a href="../home.html" class="back-home-a">
+		<span class="back-home"><p class="back-home-p">Return to</p></span>
+		<img class="logo-link" src="img-layout/logo-link.svg" alt="logo link">
+	</a>	
+	
+	<section class="galerie">
+		<h2>Galerie</h2>
+		<div class="content clearfix">
+			<a href="oeuvres.html">
+				<figure>
+					<img src="img-content/pic1.jpg" alt="photo">
+				</figure>
+
+				<figure>
+					<img src="img-content/pic2.jpg" alt="photo">
+				</figure>
+
+				<figure>
+					<img src="img-content/pic3.jpg" alt="photo">
+				</figure>
+
+				<figure>
+					<img src="img-content/pic4.jpg" alt="photo">
+				</figure>
+
+				<figure>
+					<img src="img-content/pic5.jpg" alt="photo">
+				</figure>
+
+				<figure>
+					<img src="img-content/pic6.jpg" alt="photo">
+				</figure>
+
+				<figure>
+					<img src="img-content/pic7.jpg" alt="photo">
+				</figure>
+
+				<figure>
+					<img src="img-content/pic8.jpg" alt="photo">
+				</figure>
+
+				<figure>
+					<img src="img-content/pic9.jpg" alt="photo">
+				</figure>
+
+				<figure>
+					<img src="img-content/pic10.jpg" alt="photo">
+				</figure>
+
+				<figure>
+					<img src="img-content/pic11.jpg" alt="photo">
+				</figure>
+
+				<figure>
+					<img src="img-content/pic12.jpg" alt="photo">
+				</figure>
+			</a>
+		</div>
+	</section>
+	<footer>
+		<ul class="ul-footer">
+			<li><a href="accueil.html">Accueil</a></li>
+			<li><a href="artistes.html">Artistes</a></li>
+			<li><a href="galerie.html">Galerie</a></li>
+			<li><a href="evenements.html">Evenements</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<ul class="social">
+			<li><a href=""><img src="img-layout/fb.svg" alt="social"></a></li>
+			<li><a href=""><img src="img-layout/twitter.svg" alt="social"></a></li>
+			<li><a href=""><img src="img-layout/insta.svg" alt="social"></a></li>
+			<li><a href=""><img src="img-layout/gplus.svg" alt="social"></a></li>
+			<li><a href=""><img src="img-layout/pinterest.svg" alt="social"></a></li>
+		</ul>
+		<p>Mentions Légales- Copyright 2017</p>
+	</footer>
+	<script>
+		var logoLink = document.querySelector('.logo-link');
+		var backHome = document.querySelector('.back-home');
+
+		logoLink.style.width = '40px';
+		console.log('yup');
+		window.setTimeout("logoMin()", 3000);
+		window.setTimeout("spanner()", 2000);
+
+		function spanner() {
+			backHome.style.width = "0";
+		}	
+
+		function logoMin() {
+			logoLink.style.width = '';	
+		}
+	</script>
+</body>
+</html>
